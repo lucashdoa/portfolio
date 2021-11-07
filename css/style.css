@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
 
+:root {
+  --primary-color: #4d8d8f;
+  --secondary-color: #b35626;
+}
+
 html {
   font-family: "Fira Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body,
@@ -26,6 +32,10 @@ header {
   margin: 0 auto;
 }
 
+.header-name {
+  font-size: 2em;
+}
+
 nav ul {
   display: flex;
 }
@@ -48,9 +58,10 @@ nav ul li a {
 section.title {
   gap: 100px;
   display: grid;
-  padding: 40px;
+  padding: 40px 40px 120px 40px;
   margin: 0 auto;
   max-width: 1200px;
+  /* height: calc(100vh - 100px); */
   align-items: center;
   grid-template-columns: 1fr 2fr;
 }
@@ -69,7 +80,7 @@ h1::before {
   top: 30px;
   left: -20px;
   transform: rotate(-45deg);
-  background-color: #ccf235;
+  background-color: var(--primary-color);
 }
 
 h1::after {
@@ -82,7 +93,7 @@ h1::after {
   top: 30px;
   left: -45px;
   transform: rotate(-45deg);
-  background-color: #70da1c;
+  background-color: var(--secondary-color);
 }
 
 h1 {
@@ -107,13 +118,14 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
-  align-items: top;
+  align-items: center;
 }
 
 .title-experiencia {
   color: #e0e0e0;
-  font-size: 8em;
+  font-size: 4em;
   line-height: 100%;
+  text-align: center;
 }
 
 .experience-description > p {
@@ -159,7 +171,8 @@ h1 {
   left: -4px;
   width: 4px;
   height: 1.25rem;
-  background-color: #70da1c;
+  /* background: linear-gradient(var(--primary-color), var(--secondary-color)); */
+  background-color: var(--secondary-color);
 }
 
 .experience-item p {
@@ -187,16 +200,17 @@ h1 {
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   padding: 120px 40px;
+  align-items: center;
 }
 
 section.graduation {
-  background-color: #141414;
+  background-color: #0a0a0a;
   color: white;
 }
 
 .graduation-container h2 {
-  color: black;
-  font-size: 8em;
+  color: #f5f5f5;
+  font-size: 4em;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -245,7 +259,7 @@ span.white-text {
   left: -4px;
   width: 4px;
   height: 1.25rem;
-  background-color: #70da1c;
+  background-color: var(--primary-color);
 }
 
 .intensive-courses h3 {
@@ -309,7 +323,7 @@ section.contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-  padding: 180px 40px;
+  padding: 180px 40px 40px 40px;
 }
 
 .contact-message {
@@ -351,4 +365,64 @@ footer p {
   margin: 0 auto;
   padding: 40px;
   font-size: 1.2rem;
+}
+
+/* ------------ Responsivo ----------- */
+
+@media (max-width: 1000px) {
+  section.title,
+  section.experience,
+  .graduation-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .profile-img {
+    display: none;
+  }
+  .graduation-container h2 {
+    text-align: center;
+  }
+  .title-container {
+    text-align: center;
+  }
+  h1::before {
+    display: none;
+  }
+
+  h1::after {
+    display: none;
+  }
+  .experience-list {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  section.title h1 {
+    font-size: 4rem;
+  }
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    margin-right: 0px;
+  }
+
+  nav ul li a {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+    display: block;
+    width: 100px;
+    text-align: center;
+  }
 }
