@@ -14,27 +14,27 @@
       <nav aria-label="primary">
         <ul>
           <li>
-            <a href="#">Experiência</a>
+            <a href="#experience">Experiência</a>
           </li>
           <li>
-            <a href="#">Formação</a>
+            <a href="#graduation">Formação</a>
           </li>
           <li>
-            <a href="#">Contato</a>
+            <a href="#contact">Contato</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <article class="title">
+      <section class="title" aria-label="Introdução">
         <img class="profile-img" src="/img/perfil.jpg" alt="profile picture" />
         <div class="title-container">
             <h1>Desenvolvedor </br> Front End & </br>UX/UI Designer</h1>
             <p class="title-paragraph">Localizado no Rio de Janeiro 🏖</p>
         </div>
-      </article>
-      <article class="experience">
+      </section>
+      <section class="experience" aria-label="Experiência" id="experience">
         <h2 class="title-experiencia">EXPE</br>RIÊN</br>CIA</h2>
         <section class="experience-description">
           <p>
@@ -44,9 +44,9 @@
           </p>
           <div class="experience-list">
             <div class="experience-item">
-              <span>2045</span>
+              <span class="experience-year">2045</span>
               <h3 class="experience-title">Bikcraft</h3>
-              <h3>Desenvolvedor Junior</h3>
+              <span class="experience-position">Desenvolvedor Junior</span>
               <p>
                 No projeto Bikcraft eu trabalhei no desenvolvimento completo do
                 HTML, CSS e JavaScript do site. Além disso, também prestei
@@ -61,9 +61,9 @@
               </ul>
             </div>
             <div class="experience-item">
-                <span>2044</span>
+              <span class="experience-year"> 2044</span>
               <h3 class="experience-title">Surfbot</h3>
-              <h3>Estagiario</h3>
+              <span class="experience-position">Estagiario</span>
               <p>
                 Surfbot é uma empresa que oferece aulas de surf no Rio de
                 Janeiro. O projeto foi feito com HTML, CSS e JavaScript. Todo o
@@ -76,9 +76,9 @@
               </ul>
             </div>
             <div class="experience-item">
-                <span>2044</span>
+                <span class="experience-year">2044</span>
                 <h3 class="experience-title">Brafé</h3>
-                <h3>Desenvolvedor júnior</h3>
+                <span class="experience-position">Desenvolvedor júnior</span>
               <p>
                 Mais de 3 projetos foram desenvolvidos para a empresa Brafé. Eu
                 trabalhei na criação do email marketing e também no HTML.
@@ -92,8 +92,8 @@
             </div>
           </div>
         </section>
-      </article>
-      <article class="graduation">
+      </section>
+      <section class="graduation" id="graduation">
           <div class="graduation-container">
               <h2>Form<br/>ação</h2>
               <section class="graduation-description">
@@ -141,8 +141,8 @@
                 </div>
               </section>
           </div>
-      </article>
-      <article class="contact">
+      </section>
+      <section class="contact" id="contact">
           <img src="/img/detalhe.svg" alt="detalhe">
           <div class="contact-container">
             <p class="contact-message">
@@ -155,7 +155,7 @@
             <p class="contact-item">@instagram</p>
             </div>
         </div>
-      </article>
+      </section>
     </main>
 
     <footer>

@@ -43,12 +43,9 @@ nav ul li a {
 
 /* ------------ Main ----------- */
 
-main {
-}
-
 /* ------------ Title ----------- */
 
-article.title {
+section.title {
   gap: 100px;
   display: grid;
   padding: 40px;
@@ -169,11 +166,16 @@ h1 {
   font-size: 0.85rem;
 }
 
-.experience-item span {
+.experience-year {
   font-size: 0.85rem;
   position: absolute;
   top: 20px;
   left: -50px;
+}
+
+.experience-position {
+  font-weight: 700;
+  font-size: 1.17rem;
 }
 
 /* ------------ Graduation ----------- */
@@ -187,7 +189,7 @@ h1 {
   padding: 120px 40px;
 }
 
-article.graduation {
+section.graduation {
   background-color: #141414;
   color: white;
 }
@@ -296,7 +298,7 @@ span.white-text {
 
 /* ------------ Contact ----------- */
 
-article.contact {
+section.contact {
   background-color: #000;
   color: #fff;
 }
